@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Hello, I'm Harsh Shah</h1>
+            <p>I'm a creative designer and developer passionate about crafting beautiful, functional digital
+                experiences.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img fade-in">
+                    <img src="./profile.jpeg" alt="Profile Image">
+                </div>
+                <div class="about-text fade-in">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Harsh, a passionate web developer and designer with over 1 years of experience
+                        creating beautiful, functional websites and applications.</p>
+                    <p>I specialize in creating user-friendly interfaces that are not only visually appealing but also
+                        highly functional. My approach combines technical expertise with creative problem-solving to
+                        deliver exceptional digital experiences.</p>
+
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>HTML & CSS</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>UI/UX Design</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>My Services</h2>
+                <p>Here are some of the services I offer to help bring your ideas to life.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">W</div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites built with the latest technologies to ensure fast loading, responsive design, and
+                        excellent user experience.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">U</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive, engaging user interfaces that provide exceptional user experiences across all
+                        devices.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">M</div>
+                    <h3>Mobile Applications</h3>
+                    <p>Native and cross-platform mobile applications designed to deliver your services directly to your
+                        customers' devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind? Let's talk about how I can help.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <span class="contact-icon">E</span>
+                            <span>harsh.shah@example.com</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">P</span>
+                            <span>+91 123-4567</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">L</span>
+                            <span>Vadodara, India</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form fade-in">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Harsh Shah. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50)
+            {
+                navbar.classList.add('scrolled');
+            } else
+            {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Skill bars animation
+        const skillLevels = document.querySelectorAll('.skill-level');
+        setTimeout(() => {
+            skillLevels.forEach(skill => {
+                const width = skill.style.width;
+                skill.style.width = '0';
+                setTimeout(() => {
+                    skill.style.width = width;
+                }, 300);
+            });
+        }, 1000);
+
+        // Fade-in animations on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        function checkFade () {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (elementTop < windowHeight - 100)
+                {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        // Run on load
+        checkFade();
+
+        // Run on scroll
+        window.addEventListener('scroll', checkFade);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target)
+                {
+                    window.scrollTo({
+                        top: target.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script> -->
+</body>
+
+</html>
